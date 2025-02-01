@@ -25,6 +25,8 @@ add_executable(${PROJECT_NAME} ${SRC_FILES})
 add_library(glad STATIC ./src/glad.c)
 
 # Add include directories for the glad library
+# This is the directory where all your header files are
+
 target_include_directories(${PROJECT_NAME} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
 # Link libraries
